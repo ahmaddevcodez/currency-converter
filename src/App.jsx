@@ -5,7 +5,7 @@ function App() {
   const [amount, setAmount] = useState(1);
 
   const [from, setFrom] = useState("usd");
-  const [to, setTo] = useState("inr");
+  const [to, setTo] = useState("pkr");
   const [convertedAmount, setConvertedAmount] = useState(0);
 
   const currencyInfo = useCurrencyInfo(from);
@@ -67,7 +67,7 @@ function App() {
               type="submit"
               className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg"
             >
-              Convert {from.toUpperCase()} to {to.toUpperCase()}
+              Converting {from.toUpperCase()} to {to.toUpperCase()}
             </button>
           </form>
         </div>
