@@ -23,7 +23,7 @@ function App() {
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url('https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=300')`,
+        backgroundImage: `url('https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg?auto=compress&cs=tinysrgb&w=600')`,
       }}
     >
       <div className="w-full">
@@ -39,7 +39,8 @@ function App() {
                 label="From"
                 amount={amount}
                 currencyOptions={options}
-                onCurrencyChange={(currency) => setAmount(amount)}
+                // onCurrencyChange={(currency) => setAmount(amount)}
+                onCurrencyChange={(currency) => setFrom(currency)}
                 selectCurrency={from}
                 onAmountChange={(amount) => setAmount(amount)}
               />
